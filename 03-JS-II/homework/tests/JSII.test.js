@@ -40,7 +40,7 @@ describe('mayoriaDeEdad(edad)', function() {
   });
 });
 
-describe('conection(status)', function() {
+xdescribe('conection(status)', function() {
   it('should return the conection state of user', function() {
     expect(conection(1)).toBe('Online');
     expect(conection(2)).toBe('Away');
@@ -65,7 +65,7 @@ describe('saludo(idioma)', function() {
   });
 });
 
-describe('colors(color)', function() {
+xdescribe('colors(color)', function() {
   it('should return \'This is {color}\'', function() {
     expect(colors("blue")).toBe('This is blue');
     expect(colors("red")).toBe('This is red');
@@ -121,7 +121,7 @@ describe('esEntero(num)', function() {
   });
 });
 
-describe('fizzBuzz(num)', function() {
+xdescribe('fizzBuzz(num)', function() {
   it('should return fizz if divisible by 3', function() {
     expect(fizzBuzz(9)).toBe('fizz');
   });
@@ -136,7 +136,7 @@ describe('fizzBuzz(num)', function() {
   });
 });
 
-describe('operadoresLogicos(num1, num2, num3)', function() {
+xdescribe('operadoresLogicos(num1, num2, num3)', function() {
   it('should return \'Número 1 es mayor y positivo\' if num1 is positive and if it is greater than num2 and num3', function() {
     expect(operadoresLogicos(50, 2, 15)).toBe('Número 1 es mayor y positivo');
   });
@@ -170,7 +170,7 @@ describe('esPrimo(num)', function() {
   });
 });
 
-describe ('esVerdadero(valor)', function() {
+xdescribe ('esVerdadero(valor)', function() {
   it('should return Soy verdadero if valor is true', function() {
     expect(esVerdadero(true)).toBe("Soy verdadero");
   });
@@ -179,13 +179,13 @@ describe ('esVerdadero(valor)', function() {
   });
 });
 
-describe ('tablaDelSeis()', function() {
+xdescribe ('tablaDelSeis()', function() {
   it('should return multiplication table of 6', function() {
     expect(tablaDelSeis()).toEqual([0 , 6, 12, 18, 24, 30, 36, 42, 48, 54, 60]);
   });
 });
 
-describe ('tieneTresDigitos(numero)', function() {
+xdescribe ('tieneTresDigitos(numero)', function() {
   it('should return true if numero has 3 digits', function() {
     expect(tieneTresDigitos(100)).toBe(true);
     expect(tieneTresDigitos(820)).toBe(true);
