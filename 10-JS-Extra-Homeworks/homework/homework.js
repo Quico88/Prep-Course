@@ -103,6 +103,16 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+  
+  var nuevo = Array.from(cadena);
+  for (i in nuevo){
+    if (nuevo[i] == 'a' || nuevo[i]=='b' || nuevo[i]=='c') {
+      nuevo[i] = '';
+    }
+  }
+  return nuevo.join('');
+
+
 }
 
 
@@ -110,6 +120,10 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+
+  var nuevoArr = arr.sort((a,b)=> a.length - b.length)
+  return nuevoArr;
+
 }
 
 
@@ -119,6 +133,9 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
+nuevoarray = arreglo1.filter(x => arreglo2.includes(x));
+return nuevoarray;
+
 }
 
 
